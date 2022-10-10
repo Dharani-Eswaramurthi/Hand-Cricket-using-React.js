@@ -1,4 +1,4 @@
-# Digital Hand Cricket
+# Hand Cricket
 
 
 An **interactive webpage** bringing to life, the digital version of the primitive **Hand Cricket game**, created using `HTML`, `CSS`, `JavaScript`, `NodeJS` and `React`.
