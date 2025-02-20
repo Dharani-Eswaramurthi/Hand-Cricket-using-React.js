@@ -1,7 +1,6 @@
 import React from "react";
 import "./HandCricket.css";
 import ReactAudioPlayer from "react-audio-player";
-import sound from "https://audio.jukehost.co.uk/3KiSRfjdgxqnzb7DN3Rr8g445gMt0fjU";
 
 export default class HandCricket extends React.Component {
   constructor(props) {
@@ -229,8 +228,8 @@ export default class HandCricket extends React.Component {
   }
 
   render() {
-    let path = sound;
-    let audio = new Audio(path);
+    let audioUrl = "https://audio.jukehost.co.uk/3KiSRfjdgxqnzb7DN3Rr8g445gMt0fjU";
+    let audio = new Audio(audioUrl);
     const { player, comp, fb, finish } = this.state;
     return (
       <div id="surface">
@@ -311,7 +310,7 @@ export default class HandCricket extends React.Component {
         </div>
         <div id="gamePlay">
           <ReactAudioPlayer
-            src={sound}
+            src={audioUrl}
             id="gamePlay"
             controls
           />
