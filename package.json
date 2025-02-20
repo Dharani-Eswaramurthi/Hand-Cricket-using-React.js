@@ -1,10 +1,11 @@
 {
-  "name": "hand-cricket-react",
+  "name": "hand-cricket-using-react",
   "version": "1.0.0",
   "author": "Dharani Eswaramurthi",
   "engines": {
-    "node": "16.x"
+    "node": "22.x"
   },
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "13.4.0",
