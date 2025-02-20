@@ -1,0 +1,4 @@
+[build]
+install_command = "npm install --legacy-peer-deps"
+build_command = "npm run build"
+publish = "build"
