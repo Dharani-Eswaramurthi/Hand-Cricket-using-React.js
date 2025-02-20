@@ -1,6 +1,7 @@
 import React from "react";
 import "./HandCricket.css";
 import ReactAudioPlayer from "react-audio-player";
+import sound from '../assets/sound.mp3';
 
 export default class HandCricket extends React.Component {
   constructor(props) {
@@ -228,13 +229,13 @@ export default class HandCricket extends React.Component {
   }
 
   render() {
-    let path = require("/src/assets/sound.mp3");
+    let path = require("../assets/sound.mp3");
     let audio = new Audio(path);
     const { player, comp, fb, finish } = this.state;
     return (
       <div id="surface">
         <div id="head">
-          <img src={require("/src/assets/hand.png")} width="300" height="200" />
+          <img src={require("../assets/hand.png")} width="300" height="200" />
           <h1>Hand Cricket Game</h1>
         </div>
         <div id="toss">
@@ -249,7 +250,7 @@ export default class HandCricket extends React.Component {
         </div>
         <div id="startgame">
           <img
-            src={require("/src/assets/csk-logo.png")}
+            src={require("../assets/csk-logo.png")}
             width="100"
             height="100"
           />
@@ -272,7 +273,7 @@ export default class HandCricket extends React.Component {
         </div>
         <div id="startgamebat">
           <img
-            src={require("/src/assets/mi-logo.png")}
+            src={require("../assets/mi-logo.png")}
             width="125"
             height="125"
           />
@@ -291,7 +292,7 @@ export default class HandCricket extends React.Component {
         </div>
         <div id="startgamebowl">
           <img
-            src={require("/src/assets/mi-logo.png")}
+            src={require("../assets/mi-logo.png")}
             width="125"
             height="125"
           />
@@ -310,12 +311,12 @@ export default class HandCricket extends React.Component {
         </div>
         <div id="gamePlay">
           <ReactAudioPlayer
-            src={require("/src/assets/sound.mp3")}
+            src={require("../assets/sound.mp3")}
             id="gamePlay"
             controls
           />
           <img
-            src={require("/src/assets/ipl.png")}
+            src={require("../assets/ipl.png")}
             width="400"
             height="200"
             align="left"
@@ -326,7 +327,7 @@ export default class HandCricket extends React.Component {
             style={{ color: "yellow", fontFamily: "Calibri", fontSize: 30 }}
           >
             <img
-              src={require("/src/assets/csk-logo.png")}
+              src={require("../assets/csk-logo.png")}
               width="50"
               height="40"
             />{" "}
@@ -341,7 +342,7 @@ export default class HandCricket extends React.Component {
             }}
           >
             <img
-              src={require("/src/assets/mi-logo.png")}
+              src={require("../assets/mi-logo.png")}
               width="55"
               height="45"
             />{" "}
@@ -360,7 +361,7 @@ export default class HandCricket extends React.Component {
           <br></br>
           <div id="defend">
             <img
-              src={require("/src/assets/mi-logo.png")}
+              src={require("../assets/mi-logo.png")}
               width="125"
               height="125"
             />
@@ -377,7 +378,7 @@ export default class HandCricket extends React.Component {
           </div>
           <div id="chase">
             <img
-              src={require("/src/assets/csk-logo.png")}
+              src={require("../assets/csk-logo.png")}
               width="100"
               height="100"
             />
@@ -426,7 +427,7 @@ export default class HandCricket extends React.Component {
         </div>
         <div id="defendwin">
           <img
-            src={require("/src/assets/csk-logo.png")}
+            src={require("../assets/csk-logo.png")}
             width="100"
             height="100"
           />
@@ -443,7 +444,7 @@ export default class HandCricket extends React.Component {
         </div>
         <div id="chasewin">
           <img
-            src={require("/src/assets/csk-logo.png")}
+            src={require("../assets/csk-logo.png")}
             width="100"
             height="100"
           />
@@ -458,7 +459,7 @@ export default class HandCricket extends React.Component {
         </div>
         <div id="defendloss">
           <img
-            src={require("/src/assets/mi-logo.png")}
+            src={require("../assets/mi-logo.png")}
             width="125"
             height="125"
           />
@@ -475,7 +476,7 @@ export default class HandCricket extends React.Component {
         </div>
         <div id="chaseloss">
           <img
-            src={require("/src/assets/mi-logo.png")}
+            src={require("../assets/mi-logo.png")}
             width="125"
             height="125"
           />
@@ -502,7 +503,7 @@ export default class HandCricket extends React.Component {
         </div>
         <div style={{ color: "yellow" }} id="OUT">
           <img
-            src={require("/src/assets/csk-logo.png")}
+            src={require("../assets/csk-logo.png")}
             width="100"
             height="100"
           />
