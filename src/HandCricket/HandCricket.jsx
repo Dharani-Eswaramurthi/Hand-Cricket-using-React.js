@@ -229,7 +229,7 @@ export default class HandCricket extends React.Component {
   }
 
   render() {
-    let path = require("../assets/sound.mp3");
+    let path = require("https://audio.jukehost.co.uk/3KiSRfjdgxqnzb7DN3Rr8g445gMt0fjU");
     let audio = new Audio(path);
     const { player, comp, fb, finish } = this.state;
     return (
@@ -311,7 +311,7 @@ export default class HandCricket extends React.Component {
         </div>
         <div id="gamePlay">
           <ReactAudioPlayer
-            src={require("../assets/sound.mp3")}
+            src={require("https://audio.jukehost.co.uk/3KiSRfjdgxqnzb7DN3Rr8g445gMt0fjU")}
             id="gamePlay"
             controls
           />
